@@ -10,7 +10,7 @@ From November 2017 through August 2018 which is the reporting period, revenue ex
 
 A small number of suppliers (TULPA CONSULTORIA FINANNCEIRA - EIRELI under Construction category) contribute disproportionately to total costs, with the top suppliers (SEGA FILMAGENS - SA under Equipment category) accounting for a significant share of total revenue, indicating supplier concentration risk.
 
-##3 Business Recommendations
+### Business Recommendations
 
 Optimize equipment procurement strategy by negotiating bulk discounts or long-term contracts with key equipment suppliers to reduce the largest cost component.
 
