@@ -23,17 +23,17 @@ year
 
 ### Data Cleaning & Preparation
 
-####  Data cleaning was performed using Power Query in Power BI. The following steps were applied:
+####  Data cleaning was performed using Power Query in Power BI. The following steps were taken:
 
-After importing the raw dataset into Power Query, the first step was removing columns containing only 'null' or irrelavant data pionts
+After importing the raw dataset into Power Query, I removed columns containing only 'null' or irrelavant data pionts
 
-Using 'Conditional Formatting' create a new column (Category), then on this same column, replace errors with null, fill down values and move the column to the beginning.
+Created Category column using Conditional logic, then on this same column, replace errors with null, fill down values and moved the column to the beginning.
 
-Create a new column; 'Add Column' - 'Extract' then extract the text-length and remove the column
+Created Sub_category column using text-length: Add Column - Extract then extract the text-length and remove the column
 
-Use 'If Condition' to apply the text-length and then create a new column - Sub_category
+Used IF Conditional logic to apply the text-length and then created the column - Sub_category
 
-Correct the data type for each column then close and apply changes.
+Corrected the data type for each column and applied changes
 
 While on Power BI Table view' I created 'year' column- calculated column using (year = YEAR('Report'[Date]) )
 
