@@ -3,16 +3,31 @@
 
 ### Project Overview
 
-This project analyzes costruction cost data to identify spending patterns, top cost drivers, and supplier contributions using Power BI.
+This project analyzes construction cost data to identify key spending patterns, major cost drivers, and supplier contributions. The goal is to support better cost control and supplier management decisions using interactive Power BI dashboards.
 
-### Data Source
-The dataset contains construction cost records such as Category, Sub_category, suppliers, document, sales_amount and dates.
+### The dataset contains construction cost records as listed below:
 
-### Data Cleaning Process
+Category
 
-After importing the raw dataset into Power Query, the first step was removing columns containing only 'null' or irrelavant datapionts
+Sub-category
 
-Useing 'Conditional Formating' create a new column (Category), then on this same column, replace errors with null, fill down values and move the column to the beginning.
+Date
+
+Supplier
+
+Document
+
+Sales_amount
+
+year
+
+### Data Cleaning & Preparation
+
+####  Data cleaning was performed using Power Query in Power BI. The following steps were applied:
+
+After importing the raw dataset into Power Query, the first step was removing columns containing only 'null' or irrelavant data pionts
+
+Using 'Conditional Formatting' create a new column (Category), then on this same column, replace errors with null, fill down values and move the column to the beginning.
 
 Create a new column; 'Add Column' - 'Extract' then extract the text-length and remove the column
 
@@ -22,10 +37,42 @@ Correct the data type for each column then close and apply changes.
 
 While on Power BI Table view' I created 'year' column- calculated column using (year = YEAR('Report'[Date]) )
 
-Creating KPI - from click 'Enter Data' type 'KPIs' and click Load.
+### Measures & KPIs
 
-Create and store the calculated measures inside the KPI table-data: click to highlight the 'KPIs'  at the top-right of the screen
+####  Key performance indicators were created using DAX to track business performance:
 
-Click new measure and type: Average_Sales = AVERAGE(Report[Sales_amount])
+Average Sale:  Average_Sales = AVERAGE(Report[Sales_amount])
 
-Repeat the last 2 steps to create the Total Revenue and Total Suppliers respectively: Total_Sales = SUM(Report[Sales_amount]) and Total_Suppliers = COUNTA(Report[Supplier])
+Total Revenue: Total_Sales = SUM(Report[Sales_amount])
+
+Total_Suppliers = COUNTA(Report[Supplier])
+
+These KPIs provide a high-level overview of cost distribution and supplier activity.
+
+
+### Dashboard Insights
+
+#### The dashboard highlights:
+
+Revenue distribution by category and sub-category
+
+Cost trends over time
+
+Top contributing suppliers
+
+Overall cost performance using KPIs
+
+These insights help identify high-cost areas and opportunities for cost optimization.
+
+### Tools Used
+
+Power BI
+
+Power Query
+
+DAX
+
+This analysis provides a clear understanding of construction spending behavior and supports data-driven decision-making for cost management and supplier evaluation.
+
+
+Analyzed by: Ugwu Leeechi Juliet
