@@ -1,6 +1,5 @@
 # construction_cost_analysis
 
-## Construction Cost Analysis Dashboard
 
 ### Project Overview
 
