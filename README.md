@@ -6,7 +6,7 @@
 This project analyzes construction cost data to identify key spending patterns, major cost drivers, and supplier contributions. The goal is to support better cost control and supplier management decisions using interactive Power BI dashboards.
 
 ### Data Sources:
-construction_cost: The dataset contains records as listed below:
+construction_cost: The primary dataset used for this analysis is a Microsoft Excel Comma separated values file which contains records as listed below:
 
 - Category
 - Sub-category
@@ -17,7 +17,10 @@ construction_cost: The dataset contains records as listed below:
 - year
 
 ### Tools
-- Power BI: Data cleaning, analysis and report
+- Power BI for:
+  - Data cleaning
+  - Data analysis
+  - Creating report/dashboard 
 
 ### Data Cleaning & Preparation
 
@@ -35,7 +38,7 @@ Corrected the data type for each column and applied changes
 
 While on Power BI Table view' I created 'year' column- calculated column using (year = YEAR('Report'[Date]) )
 
-### Measures & KPIs
+### Data Analysis
 
 ####  Key performance indicators were created using DAX to track business performance:
 
