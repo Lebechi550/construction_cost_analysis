@@ -5,21 +5,19 @@
 
 This project analyzes construction cost data to identify key spending patterns, major cost drivers, and supplier contributions. The goal is to support better cost control and supplier management decisions using interactive Power BI dashboards.
 
-### The dataset contains construction cost records as listed below:
+### Data Sources:
+construction_cost: The dataset contains records as listed below:
 
-Category
+- Category
+- Sub-category
+- Date
+- Supplier
+- Document
+- Sales_amount
+- year
 
-Sub-category
-
-Date
-
-Supplier
-
-Document
-
-Sales_amount
-
-year
+### Tools
+- Power BI: Data cleaning, analysis and report
 
 ### Data Cleaning & Preparation
 
@@ -64,13 +62,6 @@ Overall cost performance using KPIs
 
 These insights help identify high-cost areas and opportunities for cost optimization.
 
-### Tools Used
-
-Power BI
-
-Power Query
-
-DAX
 
 This analysis provides a clear understanding of construction spending behavior and supports data-driven decision-making for cost management and supplier evaluation.
 
